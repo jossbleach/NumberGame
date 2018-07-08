@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>JavaScript Number Game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="page-container">
+            <div class="game-container">
+                <h1>Number Game</h1>
+                <p id="score">Score: <span id="scoreNum"></span></p>
+                <p id="score">Difficulty: <span id="playerLevel"></span></p>
+                <div class="question">
+                        <ul>
+                            <li><p id="number1"></p></li>
+                            <li><p id="operator"></p></li>
+                            <li><p id="number2"></p></li>
+                            <li><p id="equals"></p></li>
+                            <li><input type="text" id="answer" /></li>
+                        </ul>
+                    </div>
+                <button class="pageButton" id="generateButton" onClick="generateNumbers()">Gimme Numbers!</button>
+                <button class="pageButton" id="checkButton" onClick="generateAnswer()">Check</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

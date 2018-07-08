@@ -1,0 +1,116 @@
+body, html {
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    background-color: #5ed8eb;
+    background-image: url('background.svg');
+    background-size: 500px;
+}
+.page-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+.game-container {
+    text-align: center;
+    padding: 60px;
+    width: 500px;
+    height: 350px;
+    border-radius: 3px;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    background-color: #fff;
+}
+.question ul {
+    margin: 0;
+    padding: 0;
+}
+.question ul li{
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 15px;
+}
+#answer {
+    display: none;
+}
+.pageButton {
+    padding: 20px 0;
+    width: 170px;
+    cursor: pointer;
+    border: none;
+    font-size: 0.875rem;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+.pageButton:focus {
+    outline: none;
+}
+#generateButton {
+    background-color: #1cdffe;
+}
+#generateButton:hover {
+    background-color: #0ea4bb;
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+}
+#checkButton {
+    background-color: #ff73ca
+}
+#checkButton:hover {
+    background-color: #c74294;
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+}
+h1 {
+    font-size: 3rem;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #a7a7a7;
+    margin: 20px 0;
+}
+#score {
+    font-size: 0.875rem;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.question {
+    font-size: 2.5rem;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    margin: 40px 0;
+}
+.question p {
+    margin: 0;
+}
+#answer {
+    border: none;
+    border-bottom: 0.125rem solid #000;
+    font-size: 2.5rem;
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    max-width: 120px;
+    text-align: center;
+}
+#answer:focus {
+    outline: none;
+}
+@media only screen and (max-width: 560px) {
+    .question {
+        font-size: 1.25rem;
+    }
+    #answer {
+        max-width: 60px;
+        font-size: 1.25rem;
+    }
+}
